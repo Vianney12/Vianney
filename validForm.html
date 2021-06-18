@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["address"].value;
+  var z = document.forms["myForm"]["email"].value;
+  var t = document.forms["myForm"]["phone"].value;
+   var p = document.forms["myForm"]["course"].value;
+    var q = document.forms["myForm"]["comment"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+  if(y == "") {
+    alert("Address must be filled out");
+    return false;
+  }
+  
+  if(z == "") {
+    alert("e-mail must be filled out");
+    return false;
+  }
+  
+  if(t == "") {
+    alert("Phone number must be filled out");
+    return false;
+  }
+  
+  if(p != "Web Technology") {
+    alert("The course should be Web Technology");
+    return false;
+
+  }
+
+   if(q == "") {
+    alert("Comments must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+  <h1>Form Validation Using Javascript</h1>
+
+<form name="myForm"  onsubmit="return validateForm()" >
+  Name: <input type="text" name="fname"><br><br>
+  Address: <input type="text" name="address"><br><br>
+  E-mail: <input type="email" name="email"><br><br>
+  Phone Number: <input type="text" name="phone"><br><br>
+  Course : 
+      <select type="text" name="course" >
+          <option>Ethics </option>
+          <option>Web Technology </option>
+          <option>Calculus </option>     
+      </select><br><br>
+  Comments : <textarea type="text" name="comment">
+    
+
+
+            </textarea><br><br>
+  <input type="submit" value="Submit">
+  
+</form>
+
+</body>
+</html>

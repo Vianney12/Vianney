@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my university</title>
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #313;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: magenta;
+}
+
+
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f2f1;
+  color: black;
+}
+
+</style>
+
+
+<body>
+<h1 style="background-color: #FAEBD7; "><b>UNIVESITY OF LAY ADVENTISTS OF KIGALI  </b></h1>
+   
+<ul>
+
+  <li><a class="active" href="index.html" style="color: yellow;">Home</a></li>
+  <li><a href="about.html" style="color: yellow;">About</a></li>
+  <li><a href="contact.html" style="color: yellow;">Contact</a></li>
+   
+
+</ul>
+   
+ 
+
+
+ <div class="slideshow-container" style="width: 50%; height: 50%;">
+  <div class="mySlides1">
+    <img src="unilak1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="unilak3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="unilak4.jpg" style="width:100%">
+  </div>
+
+ 
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+
+
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<pre>
+	
+</pre>
+  <center>
+<div style="padding-left: 5%; font-size: 22px; border: 3px solid magenta; width: 60%;border-radius: 30px; ">
+
+	<pre>
+		
+	</pre>
+	
+<i >
+The center in partnership with Xinjiang Institute of Ecology and Geography together with the Chinese Academy of Sciences is set to open on November 16th, 2016.
+
+
+
+The research center comes at a time when public sector, Experts, Scholars and the civil society are joining efforts to address environmental problems which include soil degradation, deforestation, climate change and loss of biodiversity.
+</i>
+<pre>
+	
+
+
+</pre>
+
+
+</div>
+
+</center>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+
+</body>
+</html>
